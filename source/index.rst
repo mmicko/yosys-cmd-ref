@@ -1,5 +1,5 @@
 ================================================================================
-Yosys Open SYnthesis Suite
+Yosys Open SYnthesis Suite - testing
 ================================================================================
 
 Yosys is an open source framework for RTL synthesis.  To learn more about Yosys,
