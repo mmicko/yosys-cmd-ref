@@ -70,6 +70,8 @@ if env_yosys_ver:
         release = env_yosys_ver + "-dev"
     else:
         release = env_yosys_ver
+else:
+    release = "0.40-test"
 
 # custom cmd-ref parsing/linking
 sys.path += [os.path.dirname(__file__) + "/../"]
