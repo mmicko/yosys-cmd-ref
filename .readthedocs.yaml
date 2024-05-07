@@ -9,7 +9,7 @@ build:
         python: '3.11'
     jobs:
         pre_install:
-            - export "YOSYS_VER=0.40"
+            - export YOSYS_VER=0.40
 
 formats:
   - pdf
