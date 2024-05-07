@@ -64,14 +64,11 @@ extensions.append('sphinx.ext.todo')
 todo_include_todos = False
 
 # attempt to get version
-env_yosys_ver = os.getenv("YOSYS_VER")
-if env_yosys_ver:
-    if os.getenv("READTHEDOCS") and os.getenv("READTHEDOCS_VERSION") == "latest":
-        release = env_yosys_ver + "-dev"
-    else:
-        release = env_yosys_ver
+yosys_ver = "0.40"
+if os.getenv("READTHEDOCS") and os.getenv("READTHEDOCS_VERSION") == "latest":
+    release = yosys_ver + "-dev"
 else:
-    release = "0.40-test"
+    release = yosys_ver
 
 # custom cmd-ref parsing/linking
 sys.path += [os.path.dirname(__file__) + "/../"]
